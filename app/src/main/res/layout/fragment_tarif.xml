@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tarifFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="274dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="45dp"
+        android:onClick="gorselSec"
+        android:scaleType="centerCrop"
+        android:src="@drawable/deneme"
+        app:layout_constraintBottom_toTopOf="@+id/yemekIsmiText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/yemekMalzemeText"
+        android:layout_width="279dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="Yemek Malzemelerini Giriniz"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yemekIsmiText" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="122dp"
+        android:onClick="kaydet"
+        android:text="KAYDET"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yemekMalzemeText" />
+
+    <EditText
+        android:id="@+id/yemekIsmiText"
+        android:layout_width="278dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="Yemek İsmini Giriniz"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/yemekMalzemeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
